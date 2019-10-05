@@ -31,3 +31,13 @@ email: string
 created_at: string
 updated_at: string
 ```
+
+
+### Usage
+
+```bash
+$> rails db:create
+$> rails db:migrate
+$> rails s # open url in /organizations/new
+```
+
