@@ -1,24 +1,33 @@
-# README
+## Readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sebuah projek eksperiment untuk implementasi form object.
 
-Things you may want to cover:
+### Rencana
+Form object digunakan ketika form anda tidak berelasi dengan sebuah table/model apapun. Begitu juga ketika form anda memiliki lebih dari satu table.
 
-* Ruby version
+Maka, untuk mengimplementasikan form object ini saya akan membuat sebuah program input form sederhana dengan contoh form:
 
-* System dependencies
+```
+Menambahkan Organisasi baru
+-----------------------------------
+Nama Organisasi: <String>
+Nama Anda: <String>
+Email Anda: <String>
+```
 
-* Configuration
+Dan tablenya adalah:
+```
+table_name: organizations
+id: integer
+name: string
+user_id: integer
+created_at: datetime
+updated_at: datetime
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+table_name: users
+id: integer
+name: string
+email: string
+created_at: string
+updated_at: string
+```

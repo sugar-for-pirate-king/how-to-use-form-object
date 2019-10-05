@@ -1,0 +1,18 @@
+<% flash.each do |key, value| %>
+  <p><%= value %></p>
+<% end %>
+<%= form_with model: @form, url: organizations_path, local: true do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :user_name %>
+    <%= form.text_field :user_name %>
+  </div>
+  <div>
+    <%= form.label :user_email %>
+    <%= form.text_field :user_email %>
+  </div>
+  <%= form.submit "Submit" %>
+<% end %>
